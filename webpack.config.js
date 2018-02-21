@@ -7,6 +7,7 @@ module.exports = {
       exclude: ['index.html']
     })
   ],
+  devtool: 'eval-source-map',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, 'dist')
