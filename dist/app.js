@@ -65,16 +65,37 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__print_js__ = __webpack_require__(1);
+
 
 function component() {
   var element = document.createElement('div');
+  var btn = document.createElement('button');
 
   element.innerHTML = 'Hello World';
+
+  btn.innerHTML = 'Click me and check the console!';
+  btn.onclick = __WEBPACK_IMPORTED_MODULE_0__print_js__["a" /* default */];
+
+  element.appendChild(btn);
 
   return element;
 }
 document.body.appendChild(component())
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = printMe;
+function printMe(){
+  console.log('I get called from print.js!');
+}
 
 /***/ })
 /******/ ]);
